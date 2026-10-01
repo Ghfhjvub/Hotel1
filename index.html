@@ -7,8 +7,6 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    <!-- EmailJS SDK -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <style>
         body { font-family: 'Cairo', sans-serif; }
     </style>
@@ -37,7 +35,7 @@
 
     <!-- Hero Section -->
     <section class="relative bg-slate-900 text-white py-24 px-4 overflow-hidden">
-        <div class="absolute inset-0 opacity-35 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="absolute inset-0 opacity-35 bg-cover bg-center" style="background-image: url('1.jpeg');"></div>
         <div class="relative max-w-4xl mx-auto text-center space-y-6">
             <h1 class="text-4xl md:text-6xl font-black tracking-tight">أهلاً بك في <span class="text-amber-400">فندق المدينة</span></h1>
             <p class="text-lg text-slate-300 max-w-2xl mx-auto">وجهتك الأولى للإقامة الفاخرة والراحة المتميزة في قلب مدينة بورتسودان الساحلية. احجز غرفتك الآن بكل سهولة.</p>
@@ -57,7 +55,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="rooms-grid">
             <!-- Room 1 -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-100 flex flex-col">
-                <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=600&q=80" alt="غرفة مفردة ديلوكس" class="h-56 w-full object-cover">
+                <img src="2.jpeg" alt="غرفة مفردة ديلوكس" class="h-56 w-full object-cover">
                 <div class="p-6 flex-1 flex flex-col justify-between">
                     <div>
                         <div class="flex justify-between items-center mb-2">
@@ -75,7 +73,7 @@
 
             <!-- Room 2 -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-100 flex flex-col">
-                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="غرفة مزدوجة فاخرة" class="h-56 w-full object-cover">
+                <img src="3.jpeg" alt="غرفة مزدوجة فاخرة" class="h-56 w-full object-cover">
                 <div class="p-6 flex-1 flex flex-col justify-between">
                     <div>
                         <div class="flex justify-between items-center mb-2">
@@ -93,7 +91,7 @@
 
             <!-- Room 3 -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-100 flex flex-col">
-                <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=600&q=80" alt="جناح ملكي خاص" class="h-56 w-full object-cover">
+                <img src="4.jpeg" alt="جناح ملكي خاص" class="h-56 w-full object-cover">
                 <div class="p-6 flex-1 flex flex-col justify-between">
                     <div>
                         <div class="flex justify-between items-center mb-2">
@@ -104,6 +102,60 @@
                         <div id="status-room-3" class="mb-4 text-xs font-bold p-2.5 rounded-xl bg-slate-100 text-slate-600 text-center">جاري التحقق من التوافر...</div>
                     </div>
                     <button id="btn-room-3" onclick="openBookingModal('جناح ملكي خاص', 150)" class="w-full bg-slate-900 hover:bg-amber-500 hover:text-slate-950 text-white font-bold py-2.5 rounded-xl transition">
+                        احجز هذه الغرفة
+                    </button>
+                </div>
+            </div>
+
+            <!-- Room 4 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-100 flex flex-col">
+                <img src="5.jpeg" alt="غرفة عائلية واسعة" class="h-56 w-full object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="font-bold text-xl text-slate-900">غرفة عائلية واسعة</h3>
+                            <span class="text-amber-600 font-black">$110 / ليلة</span>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-4">غرفة رحبة تتسع لأسرة كاملة مع سريرين كبيرين ومساحة جلوس مريحة.</p>
+                        <div id="status-room-4" class="mb-4 text-xs font-bold p-2.5 rounded-xl bg-slate-100 text-slate-600 text-center">جاري التحقق من التوافر...</div>
+                    </div>
+                    <button id="btn-room-4" onclick="openBookingModal('غرفة عائلية واسعة', 110)" class="w-full bg-slate-900 hover:bg-amber-500 hover:text-slate-950 text-white font-bold py-2.5 rounded-xl transition">
+                        احجز هذه الغرفة
+                    </button>
+                </div>
+            </div>
+
+            <!-- Room 5 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-100 flex flex-col">
+                <img src="6.jpeg" alt="جناح تنفيذي" class="h-56 w-full object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="font-bold text-xl text-slate-900">جناح تنفيذي</h3>
+                            <span class="text-amber-600 font-black">$130 / ليلة</span>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-4">جناح أنيق لرجال الأعمال مع مكتب عمل مستقل وخدمة إنترنت سريعة.</p>
+                        <div id="status-room-5" class="mb-4 text-xs font-bold p-2.5 rounded-xl bg-slate-100 text-slate-600 text-center">جاري التحقق من التوافر...</div>
+                    </div>
+                    <button id="btn-room-5" onclick="openBookingModal('جناح تنفيذي', 130)" class="w-full bg-slate-900 hover:bg-amber-500 hover:text-slate-950 text-white font-bold py-2.5 rounded-xl transition">
+                        احجز هذه الغرفة
+                    </button>
+                </div>
+            </div>
+
+            <!-- Room 6 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-100 flex flex-col">
+                <img src="7.jpeg" alt="غرفة ثلاثية مريحة" class="h-56 w-full object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="font-bold text-xl text-slate-900">غرفة ثلاثية مريحة</h3>
+                            <span class="text-amber-600 font-black">$70 / ليلة</span>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-4">غرفة مناسبة للأصدقاء أو العائلة الصغيرة بثلاثة أسرّة وتكييف ممتاز.</p>
+                        <div id="status-room-6" class="mb-4 text-xs font-bold p-2.5 rounded-xl bg-slate-100 text-slate-600 text-center">جاري التحقق من التوافر...</div>
+                    </div>
+                    <button id="btn-room-6" onclick="openBookingModal('غرفة ثلاثية مريحة', 70)" class="w-full bg-slate-900 hover:bg-amber-500 hover:text-slate-950 text-white font-bold py-2.5 rounded-xl transition">
                         احجز هذه الغرفة
                     </button>
                 </div>
@@ -123,12 +175,8 @@
                     <input type="text" id="client-name" required class="w-full border border-slate-300 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="مثال: محمد أحمد علي">
                 </div>
                 <div>
-                    <label class="block text-sm font-bold text-slate-700 mb-1">رقم الجوال</label>
-                    <input type="tel" id="client-phone" required class="w-full border border-slate-300 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="09xxxxxxxxx">
-                </div>
-                <div>
-                    <label class="block text-sm font-bold text-slate-700 mb-1">البريد الإلكتروني</label>
-                    <input type="email" id="client-email" required class="w-full border border-slate-300 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="example@domain.com">
+                    <label class="block text-sm font-bold text-slate-700 mb-1">رقم الواتساب</label>
+                    <input type="tel" id="client-phone" required class="w-full border border-slate-300 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="09xxxxxxxx أو 2499xxxxxxxx+">
                 </div>
                 <div class="grid grid-cols-2 gap-4">
                     <div>
@@ -262,7 +310,7 @@
 
         window.verifyAdmin = function() {
             const pass = document.getElementById('admin-pass').value;
-            if(pass === 'hassan' || pass === '1234') {
+            if(pass === 'hassan' || pass === 'عادل') {
                 closeAdminLogin();
                 document.getElementById('admin-dashboard').classList.remove('hidden');
                 window.scrollTo({ top: document.getElementById('admin-dashboard').offsetTop, behavior: 'smooth' });
@@ -280,7 +328,10 @@
             const rooms = [
                 { name: 'غرفة مفردة ديلوكس', btnId: 'btn-room-1', statusId: 'status-room-1' },
                 { name: 'غرفة مزدوجة فاخرة', btnId: 'btn-room-2', statusId: 'status-room-2' },
-                { name: 'جناح ملكي خاص', btnId: 'btn-room-3', statusId: 'status-room-3' }
+                { name: 'جناح ملكي خاص', btnId: 'btn-room-3', statusId: 'status-room-3' },
+                { name: 'غرفة عائلية واسعة', btnId: 'btn-room-4', statusId: 'status-room-4' },
+                { name: 'جناح تنفيذي', btnId: 'btn-room-5', statusId: 'status-room-5' },
+                { name: 'غرفة ثلاثية مريحة', btnId: 'btn-room-6', statusId: 'status-room-6' }
             ];
 
             const today = new Date().toISOString().split('T')[0];
@@ -329,7 +380,6 @@
 
             const name = document.getElementById('client-name').value;
             const phone = document.getElementById('client-phone').value;
-            const email = document.getElementById('client-email').value;
             const checkIn = document.getElementById('check-in').value;
             const checkOut = document.getElementById('check-out').value;
             const notes = document.getElementById('client-notes').value;
@@ -357,7 +407,6 @@
                 await addDoc(collection(db, "booking"), {
                     clientName: name,
                     clientPhone: phone,
-                    clientEmail: email,
                     roomName: selectedRoomName,
                     checkInDate: checkIn,
                     checkOutDate: checkOut,
@@ -406,7 +455,6 @@
                     <tr class="hover:bg-slate-50 transition">
                         <td class="p-3">
                             <div class="font-bold text-slate-900">${data.clientName || ''}</div>
-                            <div class="text-xs text-blue-600">${data.clientEmail || ''}</div>
                             <div class="text-xs text-slate-500" dir="ltr">${data.clientPhone || ''}</div>
                         </td>
                         <td class="p-3 font-semibold text-slate-700">${data.roomName || ''}</td>
@@ -432,12 +480,34 @@
             checkRoomAvailabilityAndUI(globalBookings);
         });
 
+        function normalizeWhatsAppNumber(raw) {
+            let n = String(raw || '').replace(/[^\d]/g, '');
+            if (n.startsWith('00')) n = n.slice(2);
+            else if (n.startsWith('0')) n = '249' + n.slice(1); // رقم سوداني محلي
+            return n;
+        }
+
         window.updateStatus = async function(id, newStatus) {
+            const booking = globalBookings.find(b => b.id === id);
+
+            // فتح الواتساب مباشرة عند الضغط (قبل أي عملية انتظار) حتى لا يحظره المتصفح
+            if (newStatus === 'مؤكد' && booking) {
+                const msg = `السلام عليكم ${booking.clientName}،\n` +
+                    `يسعدنا إبلاغكم بتأكيد حجزكم في فندق المدينة - بورتسودان ✅\n\n` +
+                    `🛏️ الغرفة: ${booking.roomName}\n` +
+                    `📅 الوصول: ${booking.checkInDate}\n` +
+                    `📅 المغادرة: ${booking.checkOutDate}\n\n` +
+                    `نتشرف باستقبالكم.`;
+                const url = `https://api.whatsapp.com/send?phone=${normalizeWhatsAppNumber(booking.clientPhone)}&text=${encodeURIComponent(msg)}`;
+                const w = window.open(url, '_blank');
+                if (!w) window.location.href = url; // إذا حُظرت النافذة ننتقل في نفس الصفحة
+            }
+
             try {
                 await updateDoc(doc(db, "booking", id), { status: newStatus });
-                alert('تم تحديث حالة الحجز بنجاح.');
             } catch (error) {
                 console.error("خطأ في التحديث:", error);
+                alert('تعذر تحديث حالة الحجز، تحقق من قواعد Firebase.');
             }
         }
 
